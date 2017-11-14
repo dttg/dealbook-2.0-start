@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home - DealBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="assets/libs/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/Swiper/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-museosans.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-desktop">
+            <div class="container-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" class="img-logo img-responsive" alt="">
+                </a>
+            </div>
+            <div class="container-menu">
+                <div class="search">
+                    <img src="assets/img/icone-lupa.svg" class="img-responsive btn-search" alt="">
+                </div>
+                <div class="container-search">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" placeholder="Find companies, deals, peoples and investors ">
+                            <button type="button" class="btn-close-search"><img src="assets/img/close-search.svg" alt=""></button>
+                            <input type="submit" value="Search">
+                        </div>
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="#" class="btn-signup">Sign In <img src="assets/img/seta.svg" alt=""></a></li>
+                        <div class="popup-login">
+                            <form>
+                                <button class="login-with-linkedin">
+                                    <img src="assets/img/linkedin-resume.svg" alt="">
+                                    <span>Sign in with Linkedin</span>
+                                </button>
+                                <span class="span-or">or Sign in with Email</span>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Password">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <img src="assets/img/seta-dir-white-login.svg" alt="">
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-information">
+                                    <span>Need an account? <a href="sign-up.html">Sign up</a></span>
+                                    <span><a href="forgot-password.html">Forgot your password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </ul>
+                    <a href="sign-up.html" type="button" class="btn-join">Join now</a>
+                    <button type="button" class="btn-idioma">
+                        <img src="assets/img/idioma-ptbr.svg" class="flag" alt="">
+                        <img src="assets/img/arrow-down.svg" class="arrow-down" alt="">
+                    </button>
+                    <div class="change-language">
+                        <a href="#">
+                            <img src="assets/img/idioma-eua.svg" alt="" class="flag">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/idioma-esp.svg" alt="" class="flag">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="container-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="btns-menu">
+                <button class="btn-login">
+                    <img src="assets/img/login.svg" class="btn-login-responsive img-responsive" class="img-responsive" alt="">
+                </button>
+                <a id="js-open-menu" class="menu-button">
+                    <i class="menu-icon"></i>
+                </a>
+                <div class="popup-login">
+                    <form>
+                        <button class="login-with-linkedin">
+                            <img src="assets/img/linkedin-resume.svg" alt="">
+                            <span>Sign in with Linkedin</span>
+                        </button>
+                        <span class="span-or">or Sign in with Email</span>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Password">
+                                <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <img src="assets/img/seta-dir-white-login.svg" alt="">
+                                            </button>
+                                        </span>
+                            </div>
+                        </div>
+                        <div class="text-information">
+                            <span>Need an account? <a href="sign-up.html">Sign up</a></span>
+                            <span><a href="forgot-password.html">Forgot your password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="menu-colapsado">
+                    <ul>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="sign-up.html" class="btn-join-now">Join Now</a></li>
+                        <div class="language">
+                            <button type="button" class="btn-idioma">
+                                <img src="assets/img/idioma-ptbr.svg" class="flag" alt="">
+                                <img src="assets/img/arrow-down.svg" class="arrow-down" alt="">
+                            </button>
+                            <div class="change-language">
+                                <a href="#">
+                            <img src="assets/img/idioma-eua.svg" alt="" class="flag">
+                        </a>
+                                <a href="#">
+                            <img src="assets/img/idioma-esp.svg" alt="" class="flag">
+                        </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="s-featured">
+        <div class="s-container">
+            <div class="text-featured">
+                <h2>100% crowdsourced</h2>
+                <h1>The ultimate resource for<br>tech deals in Brazil</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                <a href="sign-up.html">join now</a>
+            </div>
+            <iframe src="assets/animation/s-featured/demo.html" frameborder="0" allowtransparency="true" class="img-featured"></iframe>
+        </div>
+    </section>
+    <section class="s-about-us">
+        <div class="s-container">
+            <div class="text-about">
+                <div class="s-left">
+                    <h1>About Us</h1>
+                    <ul>
+                        <li>
+                            <img src="assets/img/cadeado.svg" alt="">
+                            <h2>Open<br>Source</h2>
+                        </li>
+                        <li>
+                            <img src="assets/img/maos.svg" alt="">
+                            <h2>Voluntary<br>Work </h2>
+                        </li>
+                        <li>
+                            <img src="assets/img/alvo.svg" alt="">
+                            <h2>Advanced<br>Search</h2>
+                        </li>
+                    </ul>
+                </div>
+                <div class="s-right">
+                    <p>The Brazil Startup Dealboook project started in 2011, when Diego Gomes (co-founder of Rock Content) created a public Google Spreadsheet where anybody could insert information about startup deals in Brazil. Since then, hundreds of investors, entrepreneurs and journalists across the globe have used the database to monitor deal flow or to quickly access historic data for the region.</p>
+                    <p>I have been a contributor for <span>Dealbook</span> since inception and recently I felt our community had outgrown the original spreadsheet format. Therefore, as a personal project, I decided to build the <span>Dealbook 2.0</span> into an online application where we could add enhanced features beyond the limits of a spreadsheet, but hopefully retaining its simplicity. </p>
+                </div>
+            </div>
+            <div class="database">
+                <div class="title">
+                    <h1>Browse the full Database</h1>
+                    <img src="assets/img/seta-baixo.svg" alt="">
+                </div>
+                <div class="info-geral">
+                    <ul>
+                        <li>
+                            <span class="num">2010</span>
+                            <span class="caracter">Deals</span>
+                        </li>
+                        <li>
+                            <span class="num">1698</span>
+                            <span class="caracter">Companies</span>
+                        </li>
+                        <li>
+                            <span class="num">452</span>
+                            <span class="caracter">Investors</span>
+                        </li>
+                        <li>
+                            <span class="num">1025</span>
+                            <span class="caracter">Collaboratos</span>
+                        </li>
+                    </ul>
+                </div>
+                <span class="title-featured">It's completely free</span>
+            </div>
+        </div>
+    </section>
+    <section class="s-reasons">
+        <div class="s-container">
+            <span class="text-receive">Receive all the latest</span>
+            <iframe src="assets/animation/receive/demo.html" frameborder="0" allowtransparency="true" class="img-featured"></iframe>
+            <div class="text-reasons">
+                <h1>More reasons to Sign up</h1>
+                <ul>
+                    <li>
+                        <span class="num">01</span>
+                        <p>Receive all the latest updates on tech venture capital and M&A deals.</p>
+                    </li>
+                    <li>
+                        <span class="num">02</span>
+                        <p>Become part of a vibrant open-source community that brings more transparency and liquidity to the market.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="num">03</span>
+                        <p>It's completely free.</p>
+                    </li>
+                </ul>
+                <a href="sign-up.html" class="btn-join">join now</a>
+            </div>
+        </div>
+    </section>
+    <section class="s-updates">
+        <div class="container-updates">
+            <h1>Get all the recent Updates</h1>
+            <a href="#" class="view-all">view all <span class="linha"></span></a>
+            <div class="swiper-updates">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="box-update">
+                                <p>Worthix raised USD 1,700,000 in Seed funding from 500 Startups, Valor Capital Group, Bebit</p>
+                                <span class="date">Updated on 06 Sep 17</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="box-update">
+                                <p>Worthix raised USD 1,700,000 in Seed funding from 500 Startups, Valor Capital Group, Bebit</p>
+                                <span class="date">Updated on 06 Sep 17</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="box-update">
+                                <p>Worthix raised USD 1,700,000 in Seed funding from 500 Startups, Valor Capital Group, Bebit</p>
+                                <span class="date">Updated on 06 Sep 17</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="box-update">
+                                <p>Worthix raised USD 1,700,000 in Seed funding from 500 Startups, Valor Capital Group, Bebit</p>
+                                <span class="date">Updated on 06 Sep 17</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="box-update">
+                                <p>Worthix raised USD 1,700,000 in Seed funding from 500 Startups, Valor Capital Group, Bebit</p>
+                                <span class="date">Updated on 06 Sep 17</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="box-update">
+                                <p>Worthix raised USD 1,700,000 in Seed funding from 500 Startups, Valor Capital Group, Bebit</p>
+                                <span class="date">Updated on 06 Sep 17</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows-controls">
+            <div class="arrow-left">
+                <img src="assets/img/seta-esq.svg" alt="">
+            </div>
+            <div class="count">
+                <span class="current">1</span> /
+                <span class="total">6</span>
+            </div>
+            <div class="arrow-right">
+                <img src="assets/img/seta-dir.svg" class="seta-esq" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="assets/img/logo.svg" alt="" class="logo-rodape">
+                    <nav>
+                        <ul>
+                            <li><a href="companies.html">Companies</a></li>
+                            <li><a href="deals.html">Deals</a></li>
+                            <li><a href="people.html">People</a></li>
+                            <li><a href="investors.html">Investors</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="container-button">
+                        <a href="sign-up.html" class="btn-join">
+                            join now
+                        </a>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/img/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/img/twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="p-about">Dealbook is an open source project released under the MIT license. Dealbook's content is licensed
+                        <br> under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>DESIGN BY <span><a href="https://dribbble.com/insanyDesign" target="_blank">INSANY DESIGN</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/libs/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Modernizr/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+    var swiperUpdates = new Swiper('.swiper-updates', {
+        pagination: '.swiper-pagination',
+        nextButton: '.arrows-controls .arrow-right',
+        prevButton: '.arrows-controls .arrow-left',
+        slidesPerView: 3,
+        spaceBetween: 30,
+        breakpoints: {
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            769: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            }
+        }
+    })
+    </script>
+</body>
+
+</html>

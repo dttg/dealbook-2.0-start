@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Investor - DealBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="assets/libs/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/Swiper/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-museosans.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-desktop">
+            <div class="container-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" class="img-logo img-responsive" alt="">
+                </a>
+            </div>
+            <div class="container-menu">
+                <div class="search">
+                    <img src="assets/img/icone-lupa.svg" class="img-responsive btn-search" alt="">
+                </div>
+                <div class="container-search">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" placeholder="Find companies, deals, peoples and investors ">
+                            <button type="button" class="btn-close-search"><img src="assets/img/close-search.svg" alt=""></button>
+                            <input type="submit" value="Search">
+                        </div>
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="#" class="btn-signup">Sign In <img src="assets/img/seta.svg" alt=""></a></li>
+                        <div class="popup-login">
+                            <form>
+                                <button class="login-with-linkedin">
+                                    <img src="assets/img/linkedin-resume.svg" alt="">
+                                    <span>Sign in with Linkedin</span>
+                                </button>
+                                <span class="span-or">or Sign in with Email</span>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Password">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <img src="assets/img/seta-dir-white-login.svg" alt="">
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-information">
+                                    <span>Need an account? <a href="sign-up.html">Sign up</a></span>
+                                    <span><a href="forgot-password.html">Forgot your password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </ul>
+                    <a href="sign-up.html" type="button" class="btn-join">Join now</a>
+                    <button type="button" class="btn-idioma">
+                        <img src="assets/img/idioma-ptbr.svg" class="flag" alt="">
+                        <img src="assets/img/arrow-down.svg" class="arrow-down" alt="">
+                    </button>
+                    <div class="change-language">
+                        <a href="#">
+                            <img src="assets/img/idioma-eua.svg" alt="" class="flag">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/idioma-esp.svg" alt="" class="flag">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="container-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="btns-menu">
+                <button class="btn-login">
+                    <img src="assets/img/login.svg" class="btn-login-responsive img-responsive" class="img-responsive" alt="">
+                </button>
+                <a id="js-open-menu" class="menu-button">
+                    <i class="menu-icon"></i>
+                </a>
+                <div class="popup-login">
+                    <form>
+                        <button class="login-with-linkedin">
+                            <img src="assets/img/linkedin-resume.svg" alt="">
+                            <span>Sign in with Linkedin</span>
+                        </button>
+                        <span class="span-or">or Sign in with Email</span>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Password">
+                                <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <img src="assets/img/seta-dir-white-login.svg" alt="">
+                                            </button>
+                                        </span>
+                            </div>
+                        </div>
+                        <div class="text-information">
+                            <span>Need an account? <a href="sign-up.html">Sign up</a></span>
+                            <span><a href="forgot-password.html">Forgot your password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="menu-colapsado">
+                    <ul>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="sign-up.html" class="btn-join-now">Join Now</a></li>
+                        <div class="language">
+                            <button type="button" class="btn-idioma">
+                                <img src="assets/img/idioma-ptbr.svg" class="flag" alt="">
+                                <img src="assets/img/arrow-down.svg" class="arrow-down" alt="">
+                            </button>
+                            <div class="change-language">
+                                <a href="#">
+                            <img src="assets/img/idioma-eua.svg" alt="" class="flag">
+                        </a>
+                                <a href="#">
+                            <img src="assets/img/idioma-esp.svg" alt="" class="flag">
+                        </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="top-section-detail-investor">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <a href="investors.html" class="btn-back">
+                        <img src="assets/img/seta-esq-cinza.svg" alt="">
+                        back
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="detail-investor-geral">
+                        <div class="status-name">
+                            <div class="status active">
+                                <span class="circle"></span> Active
+                            </div>
+                            <h1> Investor/ 500 Startups</h1>
+                            <h2 class="category">
+                            <img src="assets/img/clock.svg" alt="">
+                            Category: Accelerator
+                            </h2>
+                        </div>
+                        <div class="info-geral">
+                            <div class="item">
+                                <h3>1,575</h3>
+                                <span>Investments</span>
+                            </div>
+                            <div class="item">
+                                <h3>1,328</h3>
+                                <span>Companies</span>
+                            </div>
+                            <div class="item">
+                                <h3>$556.36M</h3>
+                                <span>Funds Raised:</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="details-gerals">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <div class="description">
+                        <h1>
+                            <img src="assets/img/description.svg" alt="">
+                            Description
+                        </h1>
+                        <p>500 Startups is a global venture capital seed fund with a network of startup programs headquartered in Silicon Valley with over $350M AUM</p>
+                        <ul class="info-contact">
+                            <li>
+                                <p>
+                                    <strong>Site:</strong> <a href="#" target="_blank">http://500.co/</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Founded:</strong> April 1, 2010
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Founders:</strong> Christine Tsai,
+                                    <br>Dave McClure
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>key people:</strong> William Moreira
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Industry:</strong>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Tags: </strong>
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="social">
+                            <h1>Social medias</h1>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/img/facebook-colorido.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/img/twitter-colorido.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/img/linkedin-colorido.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                    <div class="tables-info-company">
+                        <div class="item">
+                            <h1><img src="assets/img/investments.svg" alt=""> Investments</h1>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Close date</th>
+                                            <th>Company</th>
+                                            <th>Deal type</th>
+                                            <th>Round</th>
+                                            <th>Amount</th>
+                                            <th>Pre-money valution</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Mar, 2016</strong></td>
+                                            <td>Rapiddo</td>
+                                            <td>Merged with</td>
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mar, 2016</strong></td>
+                                            <td>Rapiddo</td>
+                                            <td>Merged with</td>
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mar, 2016</strong></td>
+                                            <td>Rapiddo</td>
+                                            <td>Merged with</td>
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="item investors">
+                            <h1><img src="assets/img/investors.svg" alt=""> Investors</h1>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name Investor</th>
+                                            <th>Round</th>
+                                            <th colspan="2">Partner</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="assets/img/logo-investors02.png" alt=""><strong> 99Motos</strong></td>
+                                            <td>Seed</td>
+                                            <td>......</td>
+                                            <td><a href="detail-investor.html">View profile</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets/img/logo-investors02.png" alt=""><strong> 99Motos</strong></td>
+                                            <td>Seed</td>
+                                            <td>......</td>
+                                            <td><a href="detail-investor.html">View profile</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="item investors">
+                            <h1><img src="assets/img/people.svg" alt=""> People</h1>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Full Name</th>
+                                            <th>Job Title</th>
+                                            <th colspan="2">Company</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="assets/img/photo-people.png" alt=""><strong> Carlos Macedo de Olinda</strong></td>
+                                            <td>CEO</td>
+                                            <td>......</td>
+                                            <td><a href="detail-people.html">View profile</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets/img/photo-people.png" alt=""><strong> Carlos Macedo de Olinda</strong></td>
+                                            <td>CEO</td>
+                                            <td>......</td>
+                                            <td><a href="detail-people.html">View profile</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="assets/img/logo.svg" alt="" class="logo-rodape">
+                    <nav>
+                        <ul>
+                            <li><a href="companies.html">Companies</a></li>
+                            <li><a href="deals.html">Deals</a></li>
+                            <li><a href="people.html">People</a></li>
+                            <li><a href="investors.html">Investors</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="container-button">
+                        <a href="sign-up.html" class="btn-join">
+                            join now
+                        </a>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/img/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/img/twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="p-about">Dealbook is an open source project released under the MIT license. Dealbook's content is licensed
+                        <br> under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>DESIGN BY <span><a href="https://dribbble.com/insanyDesign" target="_blank">INSANY DESIGN</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/libs/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Modernizr/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

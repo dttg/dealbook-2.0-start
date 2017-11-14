@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Companies - DealBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="assets/libs/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/Swiper/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-museosans.css">
+    <link rel="stylesheet" href="assets/libs/select-bootstrap/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-desktop">
+            <div class="container-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" class="img-logo img-responsive" alt="">
+                </a>
+            </div>
+            <div class="container-menu">
+                <div class="search">
+                    <img src="assets/img/icone-lupa.svg" class="img-responsive btn-search" alt="">
+                </div>
+                <div class="container-search">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" placeholder="Find companies, deals, peoples and investors ">
+                            <button type="button" class="btn-close-search"><img src="assets/img/close-search.svg" alt=""></button>
+                            <input type="submit" value="Search">
+                        </div>
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="#" class="btn-signup">Sign In <img src="assets/img/seta.svg" alt=""></a></li>
+                        <div class="popup-login">
+                            <form>
+                                <button class="login-with-linkedin">
+                                    <img src="assets/img/linkedin-resume.svg" alt="">
+                                    <span>Sign in with Linkedin</span>
+                                </button>
+                                <span class="span-or">or Sign in with Email</span>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Password">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <img src="assets/img/seta-dir-white-login.svg" alt="">
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-information">
+                                    <span>Need an account? <a href="sign-up.html">Sign up</a></span>
+                                    <span><a href="forgot-password.html">Forgot your password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </ul>
+                    <a href="sign-up.html" type="button" class="btn-join">Join now</a>
+                    <button type="button" class="btn-idioma">
+                        <img src="assets/img/idioma-ptbr.svg" class="flag" alt="">
+                        <img src="assets/img/arrow-down.svg" class="arrow-down" alt="">
+                    </button>
+                    <div class="change-language">
+                        <a href="#">
+                            <img src="assets/img/idioma-eua.svg" alt="" class="flag">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/idioma-esp.svg" alt="" class="flag">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="container-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="btns-menu">
+                <button class="btn-login">
+                    <img src="assets/img/login.svg" class="btn-login-responsive img-responsive" class="img-responsive" alt="">
+                </button>
+                <a id="js-open-menu" class="menu-button">
+                    <i class="menu-icon"></i>
+                </a>
+                <div class="popup-login">
+                    <form>
+                        <button class="login-with-linkedin">
+                            <img src="assets/img/linkedin-resume.svg" alt="">
+                            <span>Sign in with Linkedin</span>
+                        </button>
+                        <span class="span-or">or Sign in with Email</span>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Password">
+                                <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <img src="assets/img/seta-dir-white-login.svg" alt="">
+                                            </button>
+                                        </span>
+                            </div>
+                        </div>
+                        <div class="text-information">
+                            <span>Need an account? <a href="sign-up.html">Sign up</a></span>
+                            <span><a href="forgot-password.html">Forgot your password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="menu-colapsado">
+                    <ul>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="sign-up.html" class="btn-join-now">Join Now</a></li>
+                        <div class="language">
+                            <button type="button" class="btn-idioma">
+                                <img src="assets/img/idioma-ptbr.svg" class="flag" alt="">
+                                <img src="assets/img/arrow-down.svg" class="arrow-down" alt="">
+                            </button>
+                            <div class="change-language">
+                                <a href="#">
+                            <img src="assets/img/idioma-eua.svg" alt="" class="flag">
+                        </a>
+                                <a href="#">
+                            <img src="assets/img/idioma-esp.svg" alt="" class="flag">
+                        </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="s-title-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-7">
+                    <h1>Companies</h1>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <h2>1698 companies</h2>
+                    <a href="create-new-company.html">Create new</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="filter-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="container-filter">
+                        <h3><img src="assets/img/seta-baixo.svg" alt=""> Filter Companies</h3>
+                        <div class="filter-result">
+                            <div class="filter-complete">
+                                
+                            </div>
+                            <button class="add-new-filter"><img src="assets/img/img-new-filter.svg" alt="" data-toggle="modal" data-target="#modalFilter"></button>
+                            <button class="btn-app-filter">Apply Filter</button>
+                        </div>
+                        <div class="filter-empty">
+                            <a href="#" class="btn-add-filter-modal" data-toggle="modal" data-target="#modalFilter"><img src="assets/img/add.svg" alt=""> Add filter company</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="s-table-results">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <p class="results">380 of 1000 results</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <a href="#" class="btn-export">
+                        <img src="assets/img/export.svg" alt="">
+                        Export your results
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Company
+                                        <img src="assets/img/filter.svg" alt="">
+                                    </th>
+                                    <th>
+                                        Status
+                                        <img src="assets/img/filter.svg" alt="">
+                                    </th>
+                                    <th>
+                                        Location
+                                        <img src="assets/img/filter.svg" alt="">
+                                    </th>
+                                    <th colspan="2">
+                                        Deals
+                                        <img src="assets/img/filter.svg" alt="">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="assets/img/logo-company.png" alt=""> 123Reformei</td>
+                                    <td class="status-active"><span class="circulo"></span> Active</td>
+                                    <td>São Paulo, SP, Brazil</td>
+                                    <td>Raised Funds</td>
+                                    <td><a href="profile-company.html"><img src="assets/img/seta-dir.svg" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/logo-company.png" alt=""> 123Reformei</td>
+                                    <td class="status-active"><span class="circulo"></span> Active</td>
+                                    <td>São Paulo, SP, Brazil</td>
+                                    <td>Raised Funds</td>
+                                    <td><a href="profile-company.html"><img src="assets/img/seta-dir.svg" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/logo-company.png" alt=""> 123Reformei</td>
+                                    <td class="status-active"><span class="circulo"></span> Active</td>
+                                    <td>São Paulo, SP, Brazil</td>
+                                    <td>Raised Funds</td>
+                                    <td><a href="profile-company.html"><img src="assets/img/seta-dir.svg" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/logo-company.png" alt=""> 123Reformei</td>
+                                    <td class="status-active"><span class="circulo"></span> Active</td>
+                                    <td>São Paulo, SP, Brazil</td>
+                                    <td>Raised Funds</td>
+                                    <td><a href="profile-company.html"><img src="assets/img/seta-dir.svg" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/logo-company.png" alt=""> 123Reformei</td>
+                                    <td class="status-active"><span class="circulo"></span> Active</td>
+                                    <td>São Paulo, SP, Brazil</td>
+                                    <td>Raised Funds</td>
+                                    <td><a href="profile-company.html"><img src="assets/img/seta-dir.svg" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/logo-company.png" alt=""> 123Reformei</td>
+                                    <td class="status-active"><span class="circulo"></span> Active</td>
+                                    <td>São Paulo, SP, Brazil</td>
+                                    <td>Raised Funds</td>
+                                    <td><a href="profile-company.html"><img src="assets/img/seta-dir.svg" alt=""></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next" class="next">
+                                    <span aria-hidden="true">next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="assets/img/logo.svg" alt="" class="logo-rodape">
+                    <nav>
+                        <ul>
+                            <li><a href="companies.html">Companies</a></li>
+                            <li><a href="deals.html">Deals</a></li>
+                            <li><a href="people.html">People</a></li>
+                            <li><a href="investors.html">Investors</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="container-button">
+                        <a href="sign-up.html" class="btn-join">
+                            join now
+                        </a>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/img/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/img/twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="p-about">Dealbook is an open source project released under the MIT license. Dealbook's content is licensed
+                        <br> under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>DESIGN BY <span><a href="https://dribbble.com/insanyDesign" target="_blank">INSANY DESIGN</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div id="modalFilter" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <h1 class="modal-title">Add Filter</h1>
+                <div class="modal-header">
+                    <div class="control-breadcrumbs">
+                        <div class="controls">
+                            <button class="arrow-left disabled">
+                                <img src="assets/img/seta-esq-modal-filter.svg" alt="">
+                            </button>
+                            <button class="arrow-right disabled">
+                                <img src="assets/img/seta-dir-modal-filter.svg" alt="">
+                            </button>
+                        </div>
+                        <ul class="bread">
+                            <li class="one-category"></li>
+                            <li class="two-category"></li>
+                            <li class="three-category"></li>
+                            <li class="last-category"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-geral">
+                        <div class="level-filter main-category">
+                            <ul>
+                                <li class="active">
+                                    <a href="">
+                                        Companies 
+                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Peoples
+                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li><a href="">Investors<i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Deals<i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="level-filter sub-category">
+                            <ul>
+                                <li><a href="">Basic Info<i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Carrer<i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Education<i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Rank & Scores<i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Option teste</a></li>
+                                <li><a href="">Option teste 2</a></li>
+                            </ul>
+                        </div>
+                        <div class="level-filter last-sub-category">
+                            <ul>
+                                <li><a href="">Full Name <i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">First Name <i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Last Name <i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Location <i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Gender <i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Biography <i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">Number of News<br> Articles <i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                <li><a href="">option teste5</a></li>
+                            </ul>
+                        </div>
+                        <div class="level-filter last-level-filter">
+                            <ul>
+                                <li><a href="">option 1</a></li>
+                                <li><a href="">option 2</a></li>
+                                <li><a href="">option 3</a></li>
+                                <li><a href="">option 4</a></li>
+                                <li><a href="">option 5</a></li>
+                                <li><a href="">option 6</a></li>
+                                <li><a href="">option 7</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/libs/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Modernizr/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/libs/select-bootstrap/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

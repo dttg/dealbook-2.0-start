@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create New People - DealBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="assets/libs/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/Swiper/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-museosans.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-desktop">
+            <div class="container-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" class="img-logo img-responsive" alt="">
+                </a>
+            </div>
+            <div class="container-menu">
+                <div class="search">
+                    <img src="assets/img/icone-lupa.svg" class="img-responsive btn-search" alt="">
+                </div>
+                <div class="container-search">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" placeholder="Find companies, deals, peoples and investors ">
+                            <button type="button" class="btn-close-search"><img src="assets/img/close-search.svg" alt=""></button>
+                            <input type="submit" value="Search">
+                        </div>
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="#" class="btn-signup">Sign In <img src="assets/img/seta.svg" alt=""></a></li>
+                        <div class="popup-login">
+                            <form>
+                                <button class="login-with-linkedin">
+                                    <img src="assets/img/linkedin-resume.svg" alt="">
+                                    <span>Sign in with Linkedin</span>
+                                </button>
+                                <span class="span-or">or Sign in with Email</span>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Password">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <img src="assets/img/seta-dir-white-login.svg" alt="">
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-information">
+                                    <span>Need an account? <a href="sign-up.html">Sign up</a></span>
+                                    <span><a href="forgot-password.html">Forgot your password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </ul>
+                    <a href="sign-up.html" type="button" class="btn-join">Join now</a>
+                    <button type="button" class="btn-idioma">
+                        <img src="assets/img/idioma-ptbr.svg" class="flag" alt="">
+                        <img src="assets/img/arrow-down.svg" class="arrow-down" alt="">
+                    </button>
+                    <div class="change-language">
+                        <a href="#">
+                            <img src="assets/img/idioma-eua.svg" alt="" class="flag">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/idioma-esp.svg" alt="" class="flag">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="container-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="btns-menu">
+                <button class="btn-login">
+                    <img src="assets/img/login.svg" class="btn-login-responsive img-responsive" class="img-responsive" alt="">
+                </button>
+                <a id="js-open-menu" class="menu-button">
+                    <i class="menu-icon"></i>
+                </a>
+                <div class="popup-login">
+                    <form>
+                        <button class="login-with-linkedin">
+                            <img src="assets/img/linkedin-resume.svg" alt="">
+                            <span>Sign in with Linkedin</span>
+                        </button>
+                        <span class="span-or">or Sign in with Email</span>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Password">
+                                <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <img src="assets/img/seta-dir-white-login.svg" alt="">
+                                            </button>
+                                        </span>
+                            </div>
+                        </div>
+                        <div class="text-information">
+                            <span>Need an account? <a href="sign-up.html">Sign up</a></span>
+                            <span><a href="forgot-password.html">Forgot your password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="menu-colapsado">
+                    <ul>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="sign-up.html" class="btn-join-now">Join Now</a></li>
+                        <div class="language">
+                            <button type="button" class="btn-idioma">
+                                <img src="assets/img/idioma-ptbr.svg" class="flag" alt="">
+                                <img src="assets/img/arrow-down.svg" class="arrow-down" alt="">
+                            </button>
+                            <div class="change-language">
+                                <a href="#">
+                            <img src="assets/img/idioma-eua.svg" alt="" class="flag">
+                        </a>
+                                <a href="#">
+                            <img src="assets/img/idioma-esp.svg" alt="" class="flag">
+                        </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="form-create">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <a href="companies.html" class="btn-back"><img src="assets/img/seta-esq-cinza.svg" alt=""> back</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="title">Create new People</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-5">
+                    <form action="" id="formCreatePeople">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Job Title">
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="select-organization">
+                                <option value="" selected disabled>Organization</option>
+                                <option value="">Option 01</option>
+                                <option value="">Option 02</option>
+                                <option value="">Option 03</option>
+                                <option value="">Option 04</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" rows="6" placeholder="Bio:  Ex: Adriana Cisneros is CEO and Vice Chairman of Cisneros, one of the largest privately held media, entertainment, digital media, real estate, tourism resorts and consumer products organizations in the world."></textarea>
+                        </div>
+                        <div class="form-group tag-operator">
+                            <button type="button" class="btn-operator">I am a: Operator <img src="assets/img/seta-baixo-select.png" alt=""></button>
+                            <div class="all-tags">
+                            </div>
+                            <div class="container-operator">
+                                <ul>
+                                    <li>Dev Fron-End</li>
+                                    <li>Dev Back-End</li>
+                                    <li>Design UX</li>
+                                </ul>
+                                <div class="input-group input-add-occupation">
+                                    <input type="text" class="form-control inputOccupation" placeholder="Add occupation">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default btn-add-occupation" type="button">
+                                            <img src="assets/img/icon-add-occupation.svg" alt="">
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="City">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="State">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Country">
+                        </div>
+                        <h1 class="title-social">Social Profile</h1>
+                        <div class="form-group">
+                            <div class="input-group social">
+                                <span class="input-group-addon"><img src="assets/img/facebook-gray.svg" alt=""></span>
+                                <input type="text" class="form-control" placeholder="add facebook" aria-label="Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group social">
+                                <span class="input-group-addon"><img src="assets/img/twitter-gray.svg" alt=""></span>
+                                <input type="text" class="form-control" placeholder="add Twitter" aria-label="Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group social">
+                                <span class="input-group-addon"><img src="assets/img/linkedin-gray.png" alt=""></span>
+                                <input type="text" class="form-control" placeholder="add Linkedin" aria-label="Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group date-close">
+                                <span class="input-group-addon"><img src="assets/img/calendar.svg" alt=""></span>
+                                <input type="text" class="form-control" placeholder="Birthday" aria-label="Username">
+                            </div>
+                            <div class="form-status form-gender">
+                                <span class="label-status">Gender</span>
+                                <p class="radio-inline">
+                                    <input type="radio" id="radio-active" name="optradio" checked="">
+                                    <label for="radio-active">male</label>
+                                </p>
+                                <p class="radio-inline">
+                                    <input type="radio" id="radio-inactive" name="optradio">
+                                    <label for="radio-inactive">female</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Phone +00 (00) 00000 - 0000">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create People">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7">
+                    <div class="text-featured">
+                        <h1>Lorem ipsum dolor sit </h1>
+                        <p>Lorem ipsum dolor sit </p>
+                        <img src="assets/img/img-featured-people.png" class="img-featured-people" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="assets/img/logo.svg" alt="" class="logo-rodape">
+                    <nav>
+                        <ul>
+                            <li><a href="companies.html">Companies</a></li>
+                            <li><a href="deals.html">Deals</a></li>
+                            <li><a href="people.html">People</a></li>
+                            <li><a href="investors.html">Investors</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="container-button">
+                        <a href="sign-up.html" class="btn-join">
+                            join now
+                        </a>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/img/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/img/twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="p-about">Dealbook is an open source project released under the MIT license. Dealbook's content is licensed
+                        <br> under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>DESIGN BY <span><a href="https://dribbble.com/insanyDesign" target="_blank">INSANY DESIGN</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/libs/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Modernizr/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="assets/libs/Swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
