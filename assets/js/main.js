@@ -22,7 +22,14 @@ $(".btn-close-search").click(function(event) {
 
 $(".btn-signup").click(function(event) {
     $(this).parents("ul").find('.popup-login').toggleClass('open-popup');
-    $(this).parents("ul").find('img').toggleClass('rotate-arrow');
+    $(this).parents("li").find('img').toggleClass('rotate-arrow');
+    return false;
+});
+
+$(".btn-involved").click(function(event) {
+    $(this).parents("ul").find('.popup-involved').toggleClass('opened');
+    $(this).parents("li").find('img').toggleClass('rotate-arrow');
+    return false;
 });
 
 $(".btn-login-responsive").click(function(event) {
@@ -238,4 +245,9 @@ $('#formCreatePeople').on('keyup keypress', function(e) {
 $(".btn-idioma").click(function(event) {
     $(".change-language").toggleClass('opened');
     $(".arrow-down").toggleClass('rotate');
+});
+
+
+$(".all-questions .item").click(function(event) {
+    $(this).toggleClass('opened-answers');
 });
